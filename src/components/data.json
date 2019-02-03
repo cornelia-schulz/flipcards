@@ -1,0 +1,18 @@
+{
+    "cards" : [
+    {
+        "id": 1,
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqkayhT3NbL0s1YQqpLbhFnUSYNDqMMlZ1BPz0pi4H1PInC5r1AQ",
+        "name": "Hillary",
+        "nickname": "Hill",
+        "url": "https://en.wikipedia.org/wiki/Hillary_Clinton"
+    },
+    {
+        "id": 2,
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvcY5983wXq-E0sMixhCetS8m0onB5GGpcw1nsowMgCBw5Rw1x",
+        "name": "Michelle",
+        "nickname": "Forever first lady",
+        "url": "https://becomingmichelleobama.com/"
+    }
+    ]
+}

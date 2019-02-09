@@ -13,9 +13,11 @@
         </div>
         <div class="menu">
             <button class="menu-btn">Edit card</button>
-            <button class="menu-btn">Add new card</button>
+            <button class="menu-btn" @click="navigate(add)">Add new card</button>
             <button class="menu-btn">Delete card</button>
         </div>
+        <!-- <route-link to="/add">Add</route-link>
+        <route-link :to="{ name: 'Add' }">Add new card</route-link> -->
     </div>
 </template>
 
@@ -23,6 +25,8 @@
 import Front from './Front.vue'
 import Back from './Back.vue'
 import cards from './data.json'
+import router from '../router'
+
 export default {
   name: 'Flipcard',
   props: {},
@@ -30,11 +34,14 @@ export default {
       return {
           front: true,
           card: 0,
-          cards: cards.cards
+          cards: cards.cards,
+          add: { name: "Add" }
       }
   },
   methods: {
-
+      navigate(page) {
+          router.push(page);
+      }
   },
   components: {
       Front,
